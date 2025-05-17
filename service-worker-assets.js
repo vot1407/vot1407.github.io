@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "oz/y94oH",
+  "version": "psU6FW1Y",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -10,8 +10,8 @@ self.assetsManifest = {
       "url": "BioVOT.styles.css"
     },
     {
-      "hash": "sha256-oOdpyjCskpgvf/k+9gW3aRPwZe6h815fqdTjEEo2c7g=",
-      "url": "_framework/BioVOT.0ow5bqux1b.wasm"
+      "hash": "sha256-TPfJXEHU2kS4uRkIgohvqB58IW3obsw5WKxtbVectFw=",
+      "url": "_framework/BioVOT.0tmpha7511.wasm"
     },
     {
       "hash": "sha256-OgGeBYimSBEuOUdq3POIEdC3NdVUCkk/K6ELdHHVBfs=",
@@ -106,12 +106,12 @@ self.assetsManifest = {
       "url": "_framework/System.Memory.s3k4fpjtbw.wasm"
     },
     {
-      "hash": "sha256-uaDJXUjtVrPMO5gJ5/dikCyyZpnq9v69Cd/kmBYzqkE=",
-      "url": "_framework/System.Net.Http.Json.firoqhkdnq.wasm"
+      "hash": "sha256-rE5UbekVYUjtEquvasa9tNBd9W+nKYIguqkg2VEWNNU=",
+      "url": "_framework/System.Net.Http.83alrojcww.wasm"
     },
     {
-      "hash": "sha256-CGI0ydMagibiUTMqVy1PHZJ+nne1I3NUPwCGJM4DmdI=",
-      "url": "_framework/System.Net.Http.ga80ov8wyq.wasm"
+      "hash": "sha256-uaDJXUjtVrPMO5gJ5/dikCyyZpnq9v69Cd/kmBYzqkE=",
+      "url": "_framework/System.Net.Http.Json.firoqhkdnq.wasm"
     },
     {
       "hash": "sha256-nezaQh05iG5l4rQswqNPl/zET8UwMn5b44CpxdCrhyQ=",
@@ -146,7 +146,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.gjrc7fe0iy.wasm"
     },
     {
-      "hash": "sha256-+lZJAHzEfgcEVWG9N2J2tRx/j5L/9lhIvbnCtC1AMwE=",
+      "hash": "sha256-OvKOoMevK5Y6polSj0locTEK83MdNXj/67ReJs2+yqU=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -186,11 +186,11 @@ self.assetsManifest = {
       "url": "css/app.css"
     },
     {
-      "hash": "sha256-YysvK2GwApS4QAEc77usDHpG0gV0LrEVqkGf89lc6Sw=",
+      "hash": "sha256-z+dHWntEgmF8WI1IwwxXQ3YU0n1Oe5f24Y+l6kfOh7g=",
       "url": "css/app.min.css"
     },
     {
-      "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "hash": "sha256-mPo8MSuJX6Kt1QIs/OVYgXjwu6vPrRvdBfR2rzLVdLs=",
       "url": "favicon.png"
     },
     {
@@ -244,6 +244,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-3SPQuyEYTFg0B6ehZObPLoIuKlL+k5MnjT84Vk2y6do=",
       "url": "postcss.config.js"
+    },
+    {
+      "hash": "sha256-dbAffFd6QvBRwbk+T1F3PzFRJQPW+Y4F+2Q9lno+QRM=",
+      "url": "sample-data/CodeDynamicLight.txt"
     },
     {
       "hash": "sha256-paIeuWnSzjeLGITWkk4p3rcejUsZWCJGPeOK9UhWXtg=",
