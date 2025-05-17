@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "BioVOT",
   "resources": {
-    "hash": "sha256-6p6o5H2YmcbqYAAwa/E3zlSIINoIHN2ZLfPfO1bPzD8=",
+    "hash": "sha256-1m2w4KClSyY4+RfIzX6KCpev7BmCzyXtTUcKwVNb7Dg=",
     "fingerprinting": {
-      "BioVOT.u3yxel3q97.wasm": "BioVOT.wasm",
+      "BioVOT.0ow5bqux1b.wasm": "BioVOT.wasm",
       "Microsoft.AspNetCore.Components.pwxv46c1vv.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.2yj94ckvak.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -64,7 +64,7 @@
       "System.Runtime.InteropServices.JavaScript.era55l3sbb.wasm": "sha256-uo4WQ39eiOB+w/weMzCVCfXQey09VlzpTm+e6aR83IA="
     },
     "assembly": {
-      "BioVOT.u3yxel3q97.wasm": "sha256-6hxTFHdmXRUa+J3eC0GlsUObjlwF6PJtWXH57u2Ken4=",
+      "BioVOT.0ow5bqux1b.wasm": "sha256-oOdpyjCskpgvf/k+9gW3aRPwZe6h815fqdTjEEo2c7g=",
       "Microsoft.AspNetCore.Components.pwxv46c1vv.wasm": "sha256-aRlLYrCHAip7+DCUkx3IUFNXZf7sK4NfcZxWiDgX5aE=",
       "Microsoft.AspNetCore.Components.Web.2yj94ckvak.wasm": "sha256-OgGeBYimSBEuOUdq3POIEdC3NdVUCkk/K6ELdHHVBfs=",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "sha256-Hymk0fViavnVW/gMYu9JN650NQTS5P8zPntoNQH10Xw=",

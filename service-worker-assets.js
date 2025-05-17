@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "ZEZLV+GX",
+  "version": "oz/y94oH",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -10,8 +10,8 @@ self.assetsManifest = {
       "url": "BioVOT.styles.css"
     },
     {
-      "hash": "sha256-6hxTFHdmXRUa+J3eC0GlsUObjlwF6PJtWXH57u2Ken4=",
-      "url": "_framework/BioVOT.u3yxel3q97.wasm"
+      "hash": "sha256-oOdpyjCskpgvf/k+9gW3aRPwZe6h815fqdTjEEo2c7g=",
+      "url": "_framework/BioVOT.0ow5bqux1b.wasm"
     },
     {
       "hash": "sha256-OgGeBYimSBEuOUdq3POIEdC3NdVUCkk/K6ELdHHVBfs=",
@@ -146,7 +146,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.gjrc7fe0iy.wasm"
     },
     {
-      "hash": "sha256-MRlmnMRQNck8rGVeOev8T2KHM5ylbABe31wvMMeS478=",
+      "hash": "sha256-+lZJAHzEfgcEVWG9N2J2tRx/j5L/9lhIvbnCtC1AMwE=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -186,7 +186,7 @@ self.assetsManifest = {
       "url": "css/app.css"
     },
     {
-      "hash": "sha256-RcfL6cN/tKWr5sTahRP1BrwfA7ZFB8zTnDhoE4y8ZqY=",
+      "hash": "sha256-YysvK2GwApS4QAEc77usDHpG0gV0LrEVqkGf89lc6Sw=",
       "url": "css/app.min.css"
     },
     {
