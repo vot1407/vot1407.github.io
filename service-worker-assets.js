@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "H/hXS7Bz",
+  "version": "kCuVplRw",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -22,8 +22,8 @@ self.assetsManifest = {
       "url": "_content/Blazored.Toast/Blazored.Toast.bundle.scp.css"
     },
     {
-      "hash": "sha256-j2YZkQoaNRyhbJObxzKpx4gTCevx+orbX8+LqXSn3zw=",
-      "url": "_framework/BioVOT.1sk126ylb3.wasm"
+      "hash": "sha256-Fw8lna736KH9klKVYSsMbaZxzc3JreprLTTCzTOVakk=",
+      "url": "_framework/BioVOT.1qofuiixm5.wasm"
     },
     {
       "hash": "sha256-Y6pVrSnmzq2FCEnAkNngv+mtNlIljEmH3BEmGpr5jEQ=",
@@ -230,7 +230,7 @@ self.assetsManifest = {
       "url": "_framework/System.f0fr8djds0.wasm"
     },
     {
-      "hash": "sha256-724Qqg8GUJKR75JsiIfHrK/AJpTQzo8nqZADhmqlY4U=",
+      "hash": "sha256-xWgw0XxIY5SWGj/WHThfPhi8GbBAAvrGIhEBl41Q3Kw=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -318,8 +318,12 @@ self.assetsManifest = {
       "url": "images/qr/vcb-vot1407.jpg"
     },
     {
-      "hash": "sha256-RgZyNI15HpgiRxKARcC3FH873fm+AT18eGdGl9+U/r4=",
+      "hash": "sha256-ft9O6/kW7Uun8iDIlr7yIqZ4JxsjBsqdkFgNkmEtq1A=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-ov2UmwHukSzSPBCRzwG0WVDU0NKZ/Q2v7U8vy3jRmZw=",
+      "url": "js/MCParticleEffects.js"
     },
     {
       "hash": "sha256-agxFHWkUI2WbCxnk4t+cFnbGicN7tPvcqh2zqjWpPtg=",

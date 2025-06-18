@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "BioVOT",
   "resources": {
-    "hash": "sha256-MbQv+J2kW9272TC9wrsbFWsn/nb7td12vMc9o9ZRnC4=",
+    "hash": "sha256-LC5SmoZ7Pn0QZcyrBqMZoRypHk+TKsAzl6hMfJV78wM=",
     "fingerprinting": {
-      "BioVOT.1sk126ylb3.wasm": "BioVOT.wasm",
+      "BioVOT.1qofuiixm5.wasm": "BioVOT.wasm",
       "Blazored.Modal.h7t7ava08f.wasm": "Blazored.Modal.wasm",
       "Blazored.Toast.4gbrhkrum5.wasm": "Blazored.Toast.wasm",
       "Microsoft.AspNetCore.Components.Forms.1fsn9jkhjf.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
@@ -82,7 +82,7 @@
       "System.Runtime.InteropServices.JavaScript.era55l3sbb.wasm": "sha256-uo4WQ39eiOB+w/weMzCVCfXQey09VlzpTm+e6aR83IA="
     },
     "assembly": {
-      "BioVOT.1sk126ylb3.wasm": "sha256-j2YZkQoaNRyhbJObxzKpx4gTCevx+orbX8+LqXSn3zw=",
+      "BioVOT.1qofuiixm5.wasm": "sha256-Fw8lna736KH9klKVYSsMbaZxzc3JreprLTTCzTOVakk=",
       "Blazored.Modal.h7t7ava08f.wasm": "sha256-Y6pVrSnmzq2FCEnAkNngv+mtNlIljEmH3BEmGpr5jEQ=",
       "Blazored.Toast.4gbrhkrum5.wasm": "sha256-tCNYnYuB69ZO7+n7obUv//+KkNP809fARvATEkvPug4=",
       "Microsoft.AspNetCore.Components.Forms.1fsn9jkhjf.wasm": "sha256-Y7sPlZBRneL09VagFeM1IeubWhiuH8wl4685M4pZk5U=",
