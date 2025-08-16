@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BioVOT",
   "resources": {
-    "hash": "sha256-cA5ZibwJBn6dkYlcy8CNzXbmE3f/dGsa7NuRcCVw2bc=",
+    "hash": "sha256-qAc0Bktysb/fl0/KuRATqzNsqpL8j8ewHKq/29BiXb4=",
     "fingerprinting": {
       "Blazored.Modal.h7t7ava08f.wasm": "Blazored.Modal.wasm",
       "Blazored.Toast.4gbrhkrum5.wasm": "Blazored.Toast.wasm",
@@ -54,7 +54,7 @@
       "System.Threading.zcb42vnja5.wasm": "System.Threading.wasm",
       "System.cunp5qiwjj.wasm": "System.wasm",
       "System.Private.CoreLib.088kai77nv.wasm": "System.Private.CoreLib.wasm",
-      "BioVOT.e4m1gz4i4r.wasm": "BioVOT.wasm",
+      "BioVOT.z2oi8ofo6c.wasm": "BioVOT.wasm",
       "dotnet.native.qqumt3dtyr.js": "dotnet.native.js",
       "dotnet.native.tdl60gy9g0.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -131,7 +131,7 @@
       "System.Threading.Tasks.Parallel.cxnm8wa5jz.wasm": "sha256-oIoutGATDxoT8ym4S2UfQ1k8iXezBE+W+OByUEzVoi8=",
       "System.Threading.zcb42vnja5.wasm": "sha256-fZ9o2IQTIELEttSIeZ1yev0uL+0qIYnwOC1p/5RM/0k=",
       "System.cunp5qiwjj.wasm": "sha256-DM5iEENhrifGKn33Y7cqRzxC0OtHXYOKO13icwIazj8=",
-      "BioVOT.e4m1gz4i4r.wasm": "sha256-wp1jPL5vkDLjxYDB1pJqcfrK4WxoKqwjAc82qTrN8B0="
+      "BioVOT.z2oi8ofo6c.wasm": "sha256-a6LnEV5q7WpSk36PvdJVwgvqbiKm5rkuuzAq7cepH0Y="
     }
   },
   "cacheBootResources": true,
