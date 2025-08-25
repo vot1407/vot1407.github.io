@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "mxP9+QMp",
+  "version": "OZvlQYZ9",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -22,8 +22,8 @@ self.assetsManifest = {
       "url": "_content/Blazored.Toast/Blazored.Toast.bundle.scp.css"
     },
     {
-      "hash": "sha256-a6LnEV5q7WpSk36PvdJVwgvqbiKm5rkuuzAq7cepH0Y=",
-      "url": "_framework/BioVOT.z2oi8ofo6c.wasm"
+      "hash": "sha256-0rO22HcZDrK2Xz3GnQj1GXNMilgDn0anCin6rufCir4=",
+      "url": "_framework/BioVOT.a92zeaqmmm.wasm"
     },
     {
       "hash": "sha256-Y6pVrSnmzq2FCEnAkNngv+mtNlIljEmH3BEmGpr5jEQ=",
@@ -230,7 +230,7 @@ self.assetsManifest = {
       "url": "_framework/System.cunp5qiwjj.wasm"
     },
     {
-      "hash": "sha256-f9k3LhG2uAXW5Y5Xa971bcITBAkanvnh+InD5hDQm5M=",
+      "hash": "sha256-Av/LYhNOw4DGszoe7YVc3Wg1wWrF5aPagHMZfYswdy4=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -288,6 +288,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-Ar+z+Xpzikg5pg+6EfZHZ9Tso9jf9P8ktT//srsEPoA=",
       "url": "images/TikTok.png"
+    },
+    {
+      "hash": "sha256-UZjtXISWxG9Nv7dIIm6OJoZj6iJQyU2Aaf7W1A3gU1w=",
+      "url": "images/YouTube.webp"
     },
     {
       "hash": "sha256-sPV1GjKWHxP3mVaSdBGGqCXK6Vb4kA2AxkErEEkPInw=",
