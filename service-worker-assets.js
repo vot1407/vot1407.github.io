@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "I4a8WmlR",
+  "version": "+6+Sk+za",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -322,7 +322,7 @@ self.assetsManifest = {
       "url": "images/qr/vcb-vot1407.jpg"
     },
     {
-      "hash": "sha256-RgZyNI15HpgiRxKARcC3FH873fm+AT18eGdGl9+U/r4=",
+      "hash": "sha256-c/2JQ/fyDvyMnjXgmguKKSJgIyhUVAFK2ymhcKFemeU=",
       "url": "index.html"
     },
     {
