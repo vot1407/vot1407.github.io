@@ -1,0 +1,187 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TTS WebSocket Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        select, input, button {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #status {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .control {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>TTS WebSocket Client</h3>
+
+    <div class="control">
+        <label>Server URL:</label>
+        <input id="serverUrl" type="text" size="40" placeholder="wss://your-server/ws" />
+        <button id="connectBtn">Connect</button>
+    </div>
+
+    <div id="status">Not connected ❌</div>
+
+    <div class="control">
+        <label for="voice">Voice:</label>
+        <select id="voice"></select>
+    </div>
+
+    <div class="control">
+        <label for="rate">Rate:</label>
+        <input id="rate" type="range" min="0.5" max="2.0" step="0.1" value="1.0" />
+        <span id="rateValue">1.0</span>
+    </div>
+
+    <div class="control">
+        <input id="text" type="text" placeholder="Enter text..." size="40" />
+        <button id="speakBtn" disabled>Speak</button>
+    </div>
+
+    <script>
+        const status = document.getElementById('status');
+        const serverUrlInput = document.getElementById('serverUrl');
+        const connectBtn = document.getElementById('connectBtn');
+        const voiceSelect = document.getElementById("voice");
+        const textInput = document.getElementById("text");
+        const speakBtn = document.getElementById("speakBtn");
+        const rateInput = document.getElementById("rate");
+        const rateValue = document.getElementById("rateValue");
+
+        let ws = null;
+        let reconnectTimer = null;
+        let currentUrl = "";
+
+        function logStatus(msg, ok = false) {
+            status.textContent = msg + (ok ? " ✅" : " ❌");
+        }
+
+        function send(obj) {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify(obj));
+            }
+        }
+
+        function getVoicesPromise() {
+            return new Promise(resolve => {
+                let vs = speechSynthesis.getVoices();
+                if (vs.length) resolve(vs);
+                else speechSynthesis.onvoiceschanged = () => resolve(speechSynthesis.getVoices());
+            });
+        }
+
+        async function loadVoices() {
+            const voices = await getVoicesPromise();
+            voiceSelect.innerHTML = "";
+            voices.forEach(v => {
+                const opt = document.createElement("option");
+                opt.value = v.name;
+                opt.textContent = `${v.name} (${v.lang})`;
+                voiceSelect.appendChild(opt);
+            });
+        }
+        loadVoices();
+
+        function connect(url) {
+            if (!url) {
+                alert("Please enter server URL");
+                return;
+            }
+            currentUrl = url;
+
+            if (ws) {
+                ws.close();
+                ws = null;
+            }
+
+            logStatus("Connecting...");
+            ws = new WebSocket(url);
+
+            ws.addEventListener("open", () => {
+                logStatus("Connected", true);
+                speakBtn.disabled = false;
+                if (reconnectTimer) {
+                    clearTimeout(reconnectTimer);
+                    reconnectTimer = null;
+                }
+            });
+
+            ws.addEventListener("close", () => {
+                logStatus("Disconnected");
+                speakBtn.disabled = true;
+                scheduleReconnect();
+            });
+
+            ws.addEventListener("error", () => {
+                logStatus("Error");
+                speakBtn.disabled = true;
+                scheduleReconnect();
+            });
+
+            ws.addEventListener("message", async (evt) => {
+                try {
+                    const msg = JSON.parse(evt.data);
+                    console.log("Msg from server:", msg);
+
+                    if (msg.cmd === "speak") {
+                        speakText(msg.text || "", msg.voice || voiceSelect.value, msg.rate || rateInput.value);
+                    }
+                } catch (ex) {
+                    console.error(ex);
+                }
+            });
+        }
+
+        function scheduleReconnect() {
+            if (currentUrl && !reconnectTimer) {
+                reconnectTimer = setTimeout(() => {
+                    console.log("Reconnecting...");
+                    connect(currentUrl);
+                }, 3000);
+            }
+        }
+
+        function speakText(text, voiceName, rate) {
+            if (!text) return;
+
+            const utter = new SpeechSynthesisUtterance(text);
+            utter.rate = parseFloat(rate);
+
+            getVoicesPromise().then(voices => {
+                const match = voices.find(v => v.name === voiceName);
+                if (match) utter.voice = match;
+                speechSynthesis.cancel();
+                speechSynthesis.speak(utter);
+            });
+
+            utter.onend = () => send({ type: "done", text });
+            utter.onerror = e => send({ type: "error", message: String(e) });
+        }
+
+        connectBtn.addEventListener("click", () => {
+            connect(serverUrlInput.value.trim());
+        });
+
+        speakBtn.addEventListener("click", () => {
+            speakText(textInput.value, voiceSelect.value, rateInput.value);
+        });
+
+        rateInput.addEventListener("input", () => {
+            rateValue.textContent = rateInput.value;
+        });
+    </script>
+</body>
+</html>
